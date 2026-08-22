@@ -743,15 +743,6 @@ def check_images_are_compressed():
                 yield Failure(filepath, f"Could not decode image: {e}")
                 continue
 
-            source_size = filepath.stat().st_size
-
-            # Ignore files that are already small enough.
-            # Foor logos in particular, compression would just result in added artefacts.
-            if source_size < 30_000:
-                _add_processed_mark(filepath)
-                yield Success(filepath)
-                continue
-
             if not is_lossless and source_size < max_size:
                 _add_processed_mark(filepath)
                 yield Success(filepath)
