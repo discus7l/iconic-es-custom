@@ -15,6 +15,11 @@ here are then used by the UI components to adjust the appearance of the theme.
     <showGameTitlesInGrid ifSubset="show-game-titles-in-grid:yes">true</showGameTitlesInGrid>
     <showGameTitlesInGrid ifSubset="show-game-titles-in-grid:no">false</showGameTitlesInGrid>
   </variables>
+  <!-- Config: Show Detailed Game Info. -->
+  <variables>
+    <showDetailedGameInfo ifSubset="show-detailed-game-info:yes">true</showDetailedGameInfo>
+    <showDetailedGameInfo ifSubset="show-detailed-game-info:no">false</showDetailedGameInfo>
+  </variables>
   <!-- Config: Distribution. -->
   <variables>
     <themeCustomizationsPath ifSubset="distribution:retrobat">~/.emulationstation/theme-customizations/iconic</themeCustomizationsPath>

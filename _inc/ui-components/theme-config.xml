@@ -35,6 +35,10 @@ variables are derived from the values selected here and determine the appearance
     <include name="no" displayName="${i18n.no}"/>
     <include name="yes" displayName="${i18n.yes}"/>
   </subset>
+  <subset name="show-detailed-game-info" displayName="${i18n.show-detailed-game-info}">
+    <include name="yes" displayName="${i18n.yes}"/>
+    <include name="no" displayName="${i18n.no}"/>
+  </subset>
   <subset name="metadata-source" displayName="${i18n.metadata-source}">
     <include name="theme" displayName="${i18n.theme}"/>
     <include name="es" displayName="EmulationStation"/>
